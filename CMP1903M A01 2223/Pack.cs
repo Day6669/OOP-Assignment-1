@@ -59,49 +59,41 @@ namespace CMP1903M_A01_2223
                 }
             }
         }
-        public static void RiffleShuffle()
-        {
-
-            decimal half = pack.Count / 2;
-            int parts = (int)Math.Floor(half);
-            List<Card> shuffled = new List<Card>();
-
-            for (int i = 0; i < parts; i++)
-            {
-                shuffled.Add(pack[i]);
-                shuffled.Add(pack[parts + i]);
-            }
-            pack = shuffled;
-        }
-
-        public static void FisherYatesShuffle()
-        {
-            for (int i = 0; i < pack.Count - 1; i++)
-            {
-                int randomIndex = RandRange(i, pack.Count);
-                Card temp = pack[i];
-                pack[i] = pack[randomIndex];
-                pack[randomIndex] = temp;
-            }
-        }
+        
 
         public static bool shuffleCardPack(ShuffleType typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
-            switch (typeOfShuffle)
+            if (typeOfShuffle == ShuffleType.NoShuffle)
             {
-                case ShuffleType.NoShuffle:
-                    break;
-
-                case ShuffleType.RiffleShuffle:
-                    RiffleShuffle();
-                    break;
-
-                case ShuffleType.FisherYatesShuffle:
-                    FisherYatesShuffle();
-                    break;
-
+                return true;
             }
+
+            else if (typeOfShuffle == ShuffleType.RiffleShuffle)
+            {
+                decimal half = pack.Count / 2;
+                int parts = (int)Math.Floor(half);
+                List<Card> shuffled = new List<Card>();
+
+                for (int i = 0; i < parts; i++)
+                {
+                    shuffled.Add(pack[i]);
+                    shuffled.Add(pack[parts + i]);
+                }
+                pack = shuffled;
+            }
+
+            else if (typeOfShuffle == ShuffleType.FisherYatesShuffle)
+            {
+                for (int i = 0; i < pack.Count - 1; i++)
+                {
+                    int randomIndex = RandRange(i, pack.Count);
+                    Card temp = pack[i];
+                    pack[i] = pack[randomIndex];
+                    pack[randomIndex] = temp;
+                }
+            }
+
             return true;
         }
 
