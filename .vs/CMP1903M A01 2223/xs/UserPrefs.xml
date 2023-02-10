@@ -1,13 +1,13 @@
-﻿<Properties>
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{1A2F9CA1-E6D8-4662-B3E5-32190DD347C7}|Default">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CMP1903M A01 2223/Program.cs">
     <Files>
-      <File FileName="CMP1903M A01 2223/Program.cs" Line="17" Column="1" />
+      <File FileName="CMP1903M A01 2223/Program.cs" Line="20" Column="1" />
+      <File FileName="CMP1903M A01 2223/Pack.cs" Line="33" Column="6" />
+      <File FileName="CMP1903M A01 2223/Card.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,4 +21,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CMP1903M_220A01_2202223 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
