@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
+    // collection type to hold the cards
     class Pack
     {
 
@@ -13,15 +14,16 @@ namespace CMP1903M_A01_2223
 
         static public List<Card> getPack()
         {
+            // public getter for private attribute
             return pack;
         }
-
+        // methods for getting random variables
         private static Random random = new Random(0);
         private static int RandRange(int from, int to)
         {
             return random.Next(from, to);
         }
-
+        // data type for card faces
         public enum CardFaces
         {
             Ace = 1,
@@ -73,13 +75,17 @@ namespace CMP1903M_A01_2223
             {
                 return true;
             }
-
+            
             else if (typeOfShuffle == ShuffleType.RiffleShuffle)
             {
+                // find the middle
                 decimal half = pack.Count / 2;
+                // round the middle to a whole number
                 int parts = (int)Math.Floor(half);
+                // create a new list for the shuffle
                 List<Card> shuffled = new List<Card>();
 
+                // add cards from each half into the new array
                 for (int i = 0; i < parts; i++)
                 {
                     shuffled.Add(pack[i]);
@@ -90,9 +96,12 @@ namespace CMP1903M_A01_2223
 
             else if (typeOfShuffle == ShuffleType.FisherYatesShuffle)
             {
+                // loop all cards
                 for (int i = 0; i < pack.Count - 1; i++)
                 {
+                    // generate random number
                     int randomIndex = RandRange(i, pack.Count);
+                    // swap cards around (current <-> random)
                     Card temp = pack[i];
                     pack[i] = pack[randomIndex];
                     pack[randomIndex] = temp;

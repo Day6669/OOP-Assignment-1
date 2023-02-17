@@ -12,11 +12,13 @@ namespace CMP1903M_A01_2223
 			setup();
 		}
 
+        // create a new pack to use for testing 
 		public void setup()
 		{
 			testPack = new Pack();
 		}
 
+        // convert list objects into strings for comparisons 
 		private static string FormatCard(Card card)
 		{
 			return $"{card.Suit}-{card.Value}";

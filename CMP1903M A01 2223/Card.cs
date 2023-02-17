@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
+    // create a data type to store the different suits
     public enum suitType
     {
         Diamonds = 1,
@@ -22,7 +23,7 @@ namespace CMP1903M_A01_2223
         private suitType suitValue;
         private int cardValue;
 
-
+        // Make getters and setters for value
         public int Value
         {
             get
@@ -32,6 +33,7 @@ namespace CMP1903M_A01_2223
 
             set
             {
+                // validate set
                 if (value <= 13 && value >= 1)
                 {
                     cardValue = value;
