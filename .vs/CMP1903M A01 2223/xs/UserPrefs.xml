@@ -2,26 +2,24 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CMP1903M A01 2223/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.CMP1903M_220A01_2202223 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CMP1903M A01 2223/Pack.cs">
     <Files>
-      <File FileName="CMP1903M A01 2223/Program.cs" Line="20" Column="1" />
-      <File FileName="CMP1903M A01 2223/Pack.cs" Line="33" Column="6" />
-      <File FileName="CMP1903M A01 2223/Card.cs" Line="1" Column="1" />
+      <File FileName="CMP1903M A01 2223/Program.cs" />
+      <File FileName="CMP1903M A01 2223/Pack.cs" Line="85" Column="1" />
+      <File FileName="CMP1903M A01 2223/Card.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CMP1903M A01 2223" expanded="True">
-            <Node name="CMP1903M A01 2223" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="CMP1903M A01 2223" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CMP1903M_220A01_2202223 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

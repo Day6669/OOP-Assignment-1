@@ -11,6 +11,11 @@ namespace CMP1903M_A01_2223
 
         static private List<Card> pack;
 
+        static public List<Card> getPack()
+        {
+            return pack;
+        }
+
         private static Random random = new Random(0);
         private static int RandRange(int from, int to)
         {
