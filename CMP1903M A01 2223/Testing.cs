@@ -35,6 +35,35 @@ namespace CMP1903M_A01_2223
 			return outputCards;
 		}
 
+        // adding tests for no shuffle, to get full test coverage. 
+        private static bool NoShuffleTest()
+        {
+            Pack.shuffleCardPack(Pack.ShuffleType.NoShuffle);
+            string cards = FormatCards(Pack.getPack());
+            string expected = "Diamonds-1Diamonds-2Diamonds-3Diamonds-4Diamonds-5Diamonds-6Diamonds-7Diamonds-8Diamonds-9Diamonds-10Diamonds-11Diamonds-12Diamonds-13Spades-1Spades-2Spades-3Spades-4Spades-5Spades-6Spades-7Spades-8Spades-9Spades-10Spades-11Spades-12Spades-13Hearts-1Hearts-2Hearts-3Hearts-4Hearts-5Hearts-6Hearts-7Hearts-8Hearts-9Hearts-10Hearts-11Hearts-12Hearts-13Clubs-1Clubs-2Clubs-3Clubs-4Clubs-5Clubs-6Clubs-7Clubs-8Clubs-9Clubs-10Clubs-11Clubs-12Clubs-13";
+            return cards == expected;
+        }
+
+        private static bool DealNoShuffleTest()
+        {
+            Card card = Pack.deal();
+            string card_ = FormatCard(card);
+            string expected = "Diamonds-1";
+
+            return card_ == expected;
+        }
+
+        private static bool NoShuffleDealCardTest()
+        {
+            int expectedLength = 10;
+            List<Card> cards = Pack.dealCard(expectedLength);
+            string dealtcards = FormatCards(cards);
+            string expectedString = "Diamonds-1Diamonds-2Diamonds-3Diamonds-4Diamonds-5Diamonds-6Diamonds-7Diamonds-8Diamonds-9Diamonds-10";
+
+            return ((dealtcards == expectedString) && (cards.Count == expectedLength));
+
+        }
+
 		private static bool RiffleShuffleTest()
 		{
 			Pack.shuffleCardPack(Pack.ShuffleType.RiffleShuffle);
@@ -60,7 +89,6 @@ namespace CMP1903M_A01_2223
             int expectedLength = 10;
             List<Card> cards = Pack.dealCard(expectedLength);
             string dealtcards = FormatCards(cards);
-            Console.WriteLine(dealtcards);
 
             return ((dealtcards == expectedString) && (cards.Count == expectedLength));
         }
@@ -100,9 +128,39 @@ namespace CMP1903M_A01_2223
 		public void RunTests()
 		{
 			int passed = 0;
-			int totalTests = 6;
+			int totalTests = 9;
 
-			if (RiffleShuffleTest())
+            if (NoShuffleTest())
+            {
+                passed++;
+                Console.WriteLine("No Shuffle Test [Passed]");
+            }
+            else
+            {
+                Console.WriteLine("No Shuffle Test [Failed]");
+            }
+
+            if (DealNoShuffleTest())
+            {
+                passed++;
+                Console.WriteLine("No Shuffle Deal Test [Passed]");
+            }
+            else
+            {
+                Console.WriteLine("No Shuffle Deal Test [Failed]");
+            }
+
+            if (NoShuffleDealCardTest())
+            {
+                passed++;
+                Console.WriteLine("No Shuffle Deal Cards Test [Passed]");
+            }
+            else
+            {
+                Console.WriteLine("No Shuffle Deal Cards Test [Failed]");
+            }
+
+            if (RiffleShuffleTest())
 			{
 				passed++;
 				Console.WriteLine("Riffleshuffle Test [Passed]");
