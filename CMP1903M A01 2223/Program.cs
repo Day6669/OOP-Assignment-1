@@ -14,6 +14,8 @@ namespace CMP1903M_A01_2223
             Testing tests = new Testing();
             Console.WriteLine("====  Tests ==== \n");
             tests.RunTests();
+
+            Console.ReadLine();
         }
     }
 }

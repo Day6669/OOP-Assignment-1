@@ -4,3 +4,11 @@
 /Users/day/Desktop/ass1A&C/CMP1903M A01 2223/CMP1903M A01 2223/obj/Debug/CMP1903M A01 2223.csproj.CoreCompileInputs.cache
 /Users/day/Desktop/ass1A&C/CMP1903M A01 2223/CMP1903M A01 2223/obj/Debug/CMP1903M A01 2223.exe
 /Users/day/Desktop/ass1A&C/CMP1903M A01 2223/CMP1903M A01 2223/obj/Debug/CMP1903M A01 2223.pdb
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe.config
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.exe
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\bin\Debug\CMP1903M A01 2223.pdb
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.exe
+C:\Users\User\OneDrive - University of Lincoln\Object Oriented Programming\assessments\DayReview\OOP-Assignment-1-Day\CMP1903M A01 2223\obj\Debug\CMP1903M A01 2223.pdb
